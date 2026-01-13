@@ -1,0 +1,218 @@
+.terms-standalone-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.terms-standalone-content {
+    background: white;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    margin-top: 2rem;
+}
+
+.terms-standalone-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 2rem;
+}
+
+.terms-standalone-back-btn:hover {
+    background: #f9fafb;
+    color: var(--primary-color, #22a6a8);
+    border-color: var(--primary-color, #22a6a8);
+}
+
+.terms-standalone-header {
+    margin-bottom: 2rem;
+}
+
+.terms-standalone-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.75rem 0;
+}
+
+.terms-standalone-subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+.terms-standalone-tabs {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e5e7eb;
+    margin-bottom: 2rem;
+}
+
+.terms-standalone-tab {
+    background: transparent;
+    border: none;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6b7280;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.terms-standalone-tab.active {
+    color: var(--primary-color, #22a6a8);
+}
+
+.terms-standalone-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--primary-color, #22a6a8);
+}
+
+.terms-standalone-body {
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.terms-standalone-section {
+    margin-bottom: 3rem;
+}
+
+.terms-standalone-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 1.25rem 0;
+}
+
+.terms-standalone-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4b5563;
+    margin: 0;
+}
+
+.terms-standalone-feature {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+.terms-standalone-feature:hover {
+    background: #f0fdfa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(34, 166, 168, 0.1);
+}
+
+.terms-standalone-feature-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--primary-color, #22a6a8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.terms-standalone-feature-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 0.5rem 0;
+}
+
+.terms-standalone-feature-content p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #6b7280;
+    margin: 0;
+}
+
+.terms-standalone-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: center;
+}
+
+.terms-standalone-accept-btn {
+    background: var(--primary-color, #22a6a8);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(34, 166, 168, 0.2);
+}
+
+.terms-standalone-accept-btn:hover {
+    background: #1d8f91;
+    box-shadow: 0 6px 16px rgba(34, 166, 168, 0.3);
+    transform: translateY(-2px);
+}
+
+.terms-standalone-accept-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .terms-standalone-container {
+        padding: 1rem;
+    }
+
+    .terms-standalone-content {
+        padding: 2rem 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .terms-standalone-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .terms-standalone-feature {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .terms-standalone-feature-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .terms-standalone-accept-btn {
+        width: 100%;
+    }
+}

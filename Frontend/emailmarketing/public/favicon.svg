@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22a6a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a8587;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)"/>
+  
+  <!-- Email envelope -->
+  <g transform="translate(25, 30)">
+    <!-- Envelope body -->
+    <rect x="0" y="10" width="50" height="35" rx="3" fill="white" opacity="0.95"/>
+    
+    <!-- Envelope flap -->
+    <path d="M 0 10 L 25 30 L 50 10" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Envelope top lines -->
+    <line x1="0" y1="10" x2="25" y2="25" stroke="#22a6a8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="50" y1="10" x2="25" y2="25" stroke="#22a6a8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

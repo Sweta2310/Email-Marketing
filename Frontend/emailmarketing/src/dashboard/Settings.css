@@ -1,0 +1,134 @@
+.settings-container {
+    display: flex;
+    height: calc(100vh - 80px);
+    background: #f8f9fa;
+}
+
+.settings-sidebar {
+    width: 350px;
+    background: #ffffff;
+    padding: 3rem 2rem;
+    border-right: 1px solid #e5e7eb;
+}
+
+.settings-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #9ca3af;
+    letter-spacing: 0.05em;
+    margin-bottom: 2.5rem;
+}
+
+.settings-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.settings-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.settings-menu-item:hover {
+    background: #f9fafb;
+    color: #1f2937;
+}
+
+.settings-menu-item.active {
+    background: #f0fdfa;
+    color: #22a6a8;
+}
+
+.settings-menu-item svg {
+    flex-shrink: 0;
+    color: #9ca3af;
+}
+
+.settings-menu-item.active svg {
+    color: #22a6a8;
+}
+
+.settings-content {
+    flex: 1;
+    padding: 3rem;
+    overflow-y: auto;
+}
+
+.settings-section {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.settings-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.settings-section p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .settings-container {
+        flex-direction: column;
+    }
+
+    .settings-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 2rem 1.5rem;
+    }
+
+    .settings-title {
+        font-size: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .settings-menu {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 0.75rem;
+    }
+
+    .settings-menu-item {
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    .settings-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .settings-section {
+        padding: 2rem;
+    }
+
+    .settings-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .settings-section p {
+        font-size: 1rem;
+    }
+}

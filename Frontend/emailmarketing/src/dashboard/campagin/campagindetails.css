@@ -1,0 +1,188 @@
+.campaign-details-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.details-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.icon-btn-ghost {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.icon-btn-ghost:hover {
+    background-color: #f1f5f9;
+}
+
+/* Ensure container takes full width for centering */
+.design-preview-container {
+    width: 100%;
+}
+
+.campaign-details-container .details-section {
+    padding: 1.5rem 2rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1.5rem !important;
+    align-items: flex-start !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.campaign-details-container .section-header {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.campaign-details-container .status-icon-circle {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+}
+
+.status-icon-circle.complete {
+    background-color: #00a884;
+    /* Teal/Green color from image */
+    color: white;
+}
+
+.status-icon-circle.incomplete {
+    background-color: #e2e8f0;
+    color: white;
+}
+
+.section-content {
+    flex: 1;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.campaign-details-container .section-title {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #1a202c !important;
+    margin: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.campaign-details-container .section-description {
+    font-size: 0.95rem !important;
+    color: #718096 !important;
+    margin: 0 !important;
+}
+
+.campaign-details-container .section-meta {
+    margin-top: 0.25rem !important;
+    font-size: 0.95rem !important;
+    color: #4a5568 !important;
+}
+
+.section-meta strong {
+    color: #1a202c;
+    font-weight: 600;
+}
+
+/* Dropdown Menu Styles */
+.menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 5px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 4px;
+    z-index: 50;
+    min-width: 150px;
+}
+
+.menu-item {
+    width: 100%;
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    color: #1e293b;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background-color: #f1f5f9;
+}
+
+.menu-item.danger {
+    color: #ef4444;
+}
+
+.menu-item.danger:hover {
+    background-color: #fef2f2;
+}
+
+.btn-pill {
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+    background: white;
+    color: #1a202c;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-pill:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+/* Additional Settings section specific */
+.additional-settings {
+    margin-top: 1.5rem;
+}
+
+/* Header Adjustments */
+.campaign-header-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.campaign-status-badge {
+    background: #edf2f7;
+    color: #4a5568;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}

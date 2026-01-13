@@ -1,0 +1,67 @@
+.contacts-main-container {
+    padding: 0;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.contacts-tabs-header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 0 24px;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 0;
+}
+
+.contacts-back-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6366f1;
+    transition: all 0.2s;
+    margin-right: -16px;
+}
+
+.contacts-back-btn:hover {
+    background-color: #f3f4f6;
+    color: #4f46e5;
+}
+
+.inner-tab-item {
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a5568;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.inner-tab-item:hover {
+    color: #1a202c;
+}
+
+.inner-tab-item.active {
+    color: #22a6a8;
+}
+
+.inner-tab-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #22a6a8;
+}
+
+/* Override padding in children components for seamless look */
+.contacts-inner-content .contact-list-container,
+.contacts-inner-content .segment-container {
+    padding-top: 24px;
+}

@@ -1,0 +1,121 @@
+.privacy-policy-container {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 60px 20px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #1a1a1a;
+}
+
+.privacy-policy-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.privacy-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #22a6a8;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.privacy-back-btn:hover {
+    text-decoration: underline;
+}
+
+.privacy-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.last-update {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.toc-box {
+    background-color: #e6f6f6;
+    /* Dashboard primary-light */
+    border-radius: 20px;
+    padding: 32px;
+    margin-bottom: 60px;
+}
+
+.toc-box h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.toc-box ol {
+    padding-left: 20px;
+}
+
+.toc-box li {
+    margin-bottom: 12px;
+    color: #22a6a8;
+    font-weight: 300;
+    font-size: 18px;
+    /* Increased from 18px */
+}
+
+.toc-box a {
+    color: #22a6a8;
+    text-decoration: none;
+}
+
+.toc-box a:hover {
+    text-decoration: underline;
+}
+
+.toc-box ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.toc-box ul li {
+    font-size: 18px;
+    /* Increased from 15px */
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.privacy-body h1 {
+    font-size: 36px;
+    /* Increased from 32px */
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 24px;
+}
+
+.privacy-body h2 {
+    font-size: 22px;
+    /* Increased from 18px */
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.privacy-body p {
+    font-size: 18px;
+    /* Increased from 16px */
+    line-height: 1.7;
+    color: #4b5563;
+    /* Slightly lighter than #444 for readability with larger font */
+    margin-bottom: 24px;
+}
+
+section {
+    scroll-margin-top: 40px;
+}

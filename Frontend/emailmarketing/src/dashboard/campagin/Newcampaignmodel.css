@@ -1,0 +1,150 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.campaign-modal {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    padding: 24px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+
+.campaign-options {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    overflow-y: auto;
+}
+
+.campaign-option-card {
+    border: 2px solid #eee;
+    border-radius: 12px;
+    padding: 24px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.campaign-option-card:hover {
+    border-color: #22a6a8;
+    background-color: #f8ffff;
+}
+
+.campaign-option-card.active {
+    border-color: #22a6a8;
+    background-color: #f0fdfd;
+}
+
+.option-icon-wrapper {
+    margin-bottom: 16px;
+    position: relative;
+    width: fit-content;
+}
+
+.option-icon {
+    color: #cbd5e0;
+}
+
+.option-icon.primary {
+    color: #22a6a8;
+}
+
+.option-icon.secondary {
+    color: #805ad5;
+}
+
+.edit-badge {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    background: white;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-option-card h3 {
+    margin: 0 0 8px 0;
+    color: #2d3748;
+}
+
+.campaign-option-card p {
+    margin: 0;
+    color: #718096;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.selected-check {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #22a6a8;
+}
+
+.modal-footer {
+    padding: 24px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #666;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-overlay {
+    animation: fadeIn 0.2s ease-out;
+}
